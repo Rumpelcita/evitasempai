@@ -128,7 +128,7 @@ Así que ella te abraza.](stop:)
 (stop:)]
 ]
 
-::final_mirror [home] <830,2072>
+::final_mirror-es [home] <830,2072>
 (transition: "dissolve")[Te mirás al espejo antes de ir a dormir. 
 (live: 2s)[Hay arrugas nuevas alrededor de tus ojos.(stop:)] (live: 4s)[Estás tan vieja.(stop:)]
 (live: 6s)[Te preguntás cómo se vería Eva ahora.(stop:)]
@@ -211,7 +211,7 @@ La plaza está colmada de gente mirando el balcón. Tu hermana y su marido está
 
 (live: 22s)[(text-style:"blur")[Que los quiere a todos.(stop:)]]\
 
-(live: 24s)[(text-style:"blur")[[[Abrazás a tu hermana.->final_mirror]](stop:)]]
+(live: 24s)[(text-style:"blur")[[[Abrazás a tu hermana.->final_mirror-es]](stop:)]]
 
 ::gone-es [home] <949,2781>
 Se fueron.
