@@ -1,0 +1,282 @@
+::StoryTitle
+Evita Sempai
+
+::StoryIFID[twee2]
+Twee2::build_config.story_ifid = '253f28c1-7d11-48fb-bf69-b0418b2647f4'
+
+::Twee2Settings [twee2]
+@story_start_name = 'start'
+
+::Header [header] <815,352>
+{
+(print: "<script>$('html').removeClass(\)</script>")
+(if: (passage:)'s tags's length > 0)[
+(print: "<script>$('html').addClass('" + (passage:)'s tags.join(' ') + "'\)</script>")
+]
+}
+
+::StoryIncludes
+storycss.tw2
+evita_sempai_es.tw2
+
+::start [childhood] <673,351>
+<h1>Evita Sempai</h1>
+
+<span class="start">By Florencia Rumpel Rodriguez
+
+[[In English->start-tale]].    [[En español->start_tale-es]].</span>
+
+::start-tale [childhood] <675,489>
+You look at the mirror before leaving the house for school. You have grown so much this year, that you need to hunch for your reflection to fit in the frame. You look at your <span class="expand">[[black school uniform->school_uniform]]</span> and think the mourning should be over soon. Afterwards, you look away from the mirror and towards your sister's bed. She's still sleeping, maybe you should [[wake her up]].
+
+::school_uniform [childhood] <675,639>
+It's been almost a year since your father died. It happened shortly after you were discharged from the hospital. Your sister told you that while you were ill he had asked God to switch places with you. She said you were the one who was supposed to die...
+(live: 8s)[
+She was really mad at you back then.(stop:)]\
+(live: 12s)[
+When you asked mum about it...(stop:)]\
+(live: 16s)[
+She'd gone silent and taken a long sip of mate.(stop:)]\
+
+(live: 22s)[You turn away from the mirror and look at your sister, maybe you should [[wake her up]]. (stop:)]
+
+::wake her up [childhood] <826,640>
+Maybe you should kiss her forehead to wake her up.
+(click-replace: "kiss her forehead")[shake her shoulders]\
+(click-replace: "shake her shoulders")[use a glass of cold water]\
+(click-replace: "use a glass of cold water")[ask mum]\
+
+(live: 5s)[\
+Your mum enters the room. She kisses your sister on the forehead and tells her it's time to go to school.(stop:)]\
+(live: 8s)[
+She turns your way, pats your head and tells you to [[go to the kitchen for breakfast]].(stop:)]
+
+::go to the kitchen for breakfast [childhood] <825,789>
+<div id="book">You have some toast with margarine and some mate. It's too bitter, but you try to drink it up without making faces.(live: 8s)[ Today is the day you could take the teaching job.(stop:)](live: 10s)[ Although your father didn't want you to teach...(stop:)]
+
+(live: 12s)[You should refuse. After all, your father gave up so much for you. Why is giving this up so hard?(stop:)]
+
+(live: 14s)[Your sister comes in. Her uniform is white(click-replace: "Her uniform is white")[Underneath she has a purple skirt with a white shirt](click-replace: "Underneath she has a purple skirt with a white shirt")[Her ribbon is pink]. Your mum doesn't like it.(stop:)]
+(live: 20s)[\
+She tells your sister to change.(stop:)]
+(live: 24s)[\
+Your sister explains that the mourning is almost over.(stop:)]
+(live: 28s)[\
+Your mum's gaze hardens and she repeats her command, her voice like steel.(stop:)]
+(live: 32s)[
+Your sister runs crying to her room. [[You leave for school]] and wait for her at the park.(stop:)]</div>
+
+::You leave for school [childhood] <828,925>
+Your sister catches up with you. She's all in black now, and crying harder. "Well, at least you are taking the teaching job, right?" she asks.
+(live: 6s)[
+[[You don't know what to tell her]].(stop:)]
+
+::You don't know what to tell her [factory] <828,1060>
+(transition: "dissolve")[You look in the mirror before leaving the house for work. You like how the shirt and skirt look on you, but you think your hair will get in the way. You set it up in a bun and make a mental note to cut it short soon.
+
+[[You leave for breakfast->You go and have breakfast with your mum.]]]
+
+::You go and have breakfast with your mum. [factory] <828,1210>
+You don't see your sister in the kitchen. You remember she was meeting with her fiancée today.
+
+You look at your mum, she is getting old and it would be nice to have a house again so she could settle down, but you make just enough money at your work to get by. You hope that things improve once your sister marries.
+
+Your mum stares at you and smiles, you kiss her forehead and [[leave for work]].
+
+::leave for work [factory] <828,1360>
+You get to work. Your boss lets you know there will be people coming to visit the factory later today and tells you to [[start working]].
+
+::start working [factory] <828,1510>
+You sit down and get the machine started. You start sewing...
+(click-append: "You start sewing...")[
+You wonder how your sister is doing with her date, she seemed nervous about getting married next week.
+
+(live: 2s)[One tie is done...(stop:)]\
+]\
+(click-append: "One tie is done...")[
+You could have married some time ago. Now it seems so long ago.
+
+(live: 2s)[Two ties are done...(stop:)]\
+]\
+(click-append: "Two ties are done...")[
+But leaving your mum on her own felt wrong.
+
+(live: 2s)[Three ties are done...(stop:)]\
+]\
+(click-append: "Three ties are done...")[
+She gave up so much for you.
+
+(live: 2s)[Four ties are done...(stop:)]\
+]\
+(click-append: "Four ties are done...")[
+So did your dad.
+
+(live: 2s)[Five ties are done...(stop:)]\
+]\
+(click-append: "Five ties are done...")[
+Staying with mum was the least you could do.
+
+(live: 2s)[Six ties are done...(stop:)]\
+]\
+(click-append: "Six ties are done...")[
+Besides, it's not like you liked the guy.
+
+(live: 2s)[Seven ties are done...(stop:)]\
+(click-append: "Seven ties are done...")[
+Nor any other guy for that matter.
+(live: 4s)[
+[[Your boss is calling for you]].]]\
+(stop:)]
+
+::Your boss is calling for you [factory] <830,1641>
+You and your coworkers are gathered in the main hall. A young lady enters the factory. She is followed by two guys in suits. Her name is <span class="expand">[[Eva]]</span>.
+(live: 14s)[(go-to: "eva_does_her_thing")(stop:)]
+
+::Now it's your turn [factory] <830,1791>
+A wave of self-consciousness hits your body. (click-append: "A wave of self-consciousness hits your body.")[ You realize that your hair is a mess] (click-append: "is a mess")[, that your clothes are old and worn] (click-append: "old and worn")[, and that your hands are rough from work.] 
+
+(live: 12s)[But Eva only seems to care about you.(stop:)]
+
+(live: 14s)["Is your job okay?"(stop:)]
+(live: 16s)["How are things going at home?"(stop:)]
+(live: 18s)["Is there anything you need?"(stop:)]
+(live: 20s)[She promises to help.(stop:)]
+(live: 22s)[
+[[You tell her about your life.]](stop:)]
+
+::You tell her about your life. [factory] <830,1941>
+How your dad died. 
+(live:1.5s)[How your sister will marry soon.(stop:)]
+(live: 3s)[Your hopes of finding a decent house to live in with your mum.(stop:)] 
+(live: 7s)[You start talking about how you refused the teaching job. (click-append: "You start talking about how you refused the teaching job.")[ 
+But you start to cry...](click-append: "But you start to cry...")[
+So she gives you a hug.](stop:)
+(live: 8.5s)[
+[[You feel that everything will be fine->trip_to_speech]].
+(stop:)]
+]
+
+::final_mirror [home] <830,2072>
+(transition: "dissolve")[You look in the mirror before going to bed. 
+(live: 2s)[There are new wrinkles around your eyes.(stop:)] (live: 4s)[You have grown so old.(stop:)]
+(live: 6s)[You wonder what Eva would look like now.(stop:)]
+(live: 8s)[She died so young...(stop:)]
+(live: 10s)[
+[[The phone rings.]](stop:)]]
+
+::knock [home] <705,2650>
+You can hear people discussing outside. It's late, so you grab a broom, just to be sure. 
+You move slowly towards the door and take a peek. (click-append: "You move slowly towards the door and take a peek.")[ <span class="expand">[[It's the military]].</span> [[They ring the doorbell.->open_door]]]
+
+::open_door [home] <705,2780>
+You open the door slowly, the broom held tightly in your left hand. 
+
+The thugs look at you and laugh.  
+(live: 2s)["There are some thieves running through the rooftops," they say.(stop:)]
+(live: 4s)["We need you to let us in to catch them."(stop:)]
+(live: 6s)[You comply and lead them upstairs. (click-append: "You comply and lead them upstairs.")[ 
+"Thank you, that will be all."
+(live: 8s)[(go-to: "boom")(stop:)](stop:)](stop:)]
+
+::The phone rings. [home] <705,2222>
+It's your sister.
+
+(live: 2s)[She says the military went to her house.(stop:)]
+(live: 6s)[They are doing rounds through the neighborhood.(stop:)]
+(live: 10s)[They shouldn't be far from your house now.(stop:)]
+(live: 14s)[You thank her and [[hang up]].(stop:)]
+
+::hang up [home] <705,2372>
+If the military are making rounds, having Eva's book around the house might be a problem. Especially since they took your brother in law away. He's been missing for months.
+
+The book is hidden under some floorboards in your bedroom. It should be safe enough in there, but the military might find it if they are thorough. [[You should act quickly->be found]].
+
+::be found [home] <830,2522>
+Eva lent you an ear, gave you her help. Of all the people in your life, she was the kindest. That book is the only thing you have left from her. [[You should keep it->knock]].
+
+Though if you get in trouble for this, your mum will suffer, and so will your sister. Would Eva want you to go to jail or worse over a memento? She knows, surely wherever she may be, that you love her and won't forget her. [[You should burn her book at the stove->burn]]. It's winter, so you don't think it will be too suspicious.
+
+::burn [home] <979,2534>
+You have the book in your hand. You try to keep your pulse steady while you open the lid of the stove.
+
+[[You push the book inside and close the lid]].
+
+::You push the book inside and close the lid [home] <841,2649>
+The smell of burnt paper fills your nostrils. (text-style:"blur")[Now it's too late to save the book.] [[You hear noises outside->knock]].
+
+::trip_to_speech [speech] <667,1939>
+(transition: "dissolve")[You look in the mirror, getting ready to see Eva's speech. You know her health has been failing lately. You hope this means she will be getting better soon.
+
+(live: 8s)[You are looking really pretty today. You cut your hair yesterday and your mum helped you sew a new suit. She's been doing better ever since Eva helped you get the house back.(stop:)]
+
+(live: 18s)[Now you finally have a house of your own.(stop:)]
+
+(live: 22s)[You turn away from the mirror and [[look at the book she gave you]]. It's on the nightstand.(stop:)]]
+
+::look at the book she gave you [speech] <542,1941>
+<div id="book">It's called *La Razón de mi Vida*. It has her picture on the cover, she's smiling. 
+
+(live: 4s)[When you open the book you can read the inscription:
+<span class="writing">Para mi China querida.
+Evita</span>(stop:)]
+
+(live: 10s)[You always read a bit of the book before you go to sleep. You pay special attention to her inscription. (click-append: "inscription.")[ She called you darling.](stop:)]
+
+(live: 16s)[It worries you that she wrote it in a hurry, she's always in a hurry. That's probably why she got so sick in the first place.(stop:)]
+
+(live: 20s)[But it doesn't matter. [[You will see her today.]] (stop:)]</div>
+
+::You will see her today. [speech] <544,2071>
+The Plaza is packed with people staring at the balcony. Your sister and her husband decided to come with you. Your sister is holding your hand.
+
+(live: 6s)[When you see Eva on the balcony, you squeeze your sister's hand tighter. It's so scary to see her like this. She used to smile like the sun, to do things without pause, and now...(stop:)]
+
+(live: 16s)[Now she cannot even stand by herself.(stop:)]\
+
+(live: 18s)[Yet she wanted to see you.(stop:)]\
+
+(live: 20s)[You know she loves you.(stop:)]\
+
+(live: 22s)[(text-style:"blur")[She loves everyone.(stop:)]]\
+
+(live: 24s)[(text-style:"blur")[[[You hold onto your sister.->final_mirror]](stop:)]]
+
+::gone [home] <949,2781>
+They are gone.
+
+(live: 8s)[(reload:)(stop:)]
+
+::boom [home] <824,2782>
+(live: 2s)[As you start going downstairs you can hear the footsteps on the ceiling. They match your heartbeat.(stop:)]
+
+(live: 4s)[(transition: "shudder")[(text-colour: "#955452")[
+<h3>BOOM!</h3>
+]\
+]\
+(stop:)]\
+(live: 5s)[(transition: "shudder")[(text-colour: "#955452")[
+<h3>BOOM!</h3>
+]\
+]\
+(stop:)]\
+(live: 6s)[(transition: "shudder")[(text-colour: "#955452")[
+<h3>BOOM!</h3>
+]\
+]\
+(stop:)]\
+(live: 9s)[
+(go-to: "gone")(stop:)]
+
+::Eva [factory] <705,1791>
+The first lady. She used to be an actress. Today she is wearing a pencil skirt with a white shirt and a short coat. Her hair is a light shade of blonde, it's wavy and reaches her shoulders.
+(live: 14s)[(go-to: "eva_does_her_thing")(stop:)]
+
+::eva_does_her_thing [factory] <964,1644>
+She smiles like the sun and greets every single one of you with a kiss on the cheek. When it's your turn, you can feel yourself blush. Afterwards, your boss shows her around, she observes and ponders the place around her.
+
+(live: 10s)[After a while, she decides she has seen enough and starts talking to all the workers, one by one and in private. [[Now it's your turn]].(stop:)]
+
+::It's the military [home] <578,2768>
+As everyone knows by now a group of burly guys, dressed like movie mobsters, standing in front of a green Ford Falcon are what the military looks like now. Just a bunch of thugs. 
+
+[[They ring the doorbell again->open_door]].

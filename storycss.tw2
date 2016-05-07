@@ -1,0 +1,109 @@
+::StoryCSS [stylesheet]
+@import url(https://dl.dropboxusercontent.com/u/4823688/fonts/Park%20Lane%20NF/fonts.css);
+
+@import url(https://fonts.googleapis.com/css?family=Limelight|Nothing+You+Could+Do);
+
+html{
+background-color: #fff;
+}
+
+html.childhood{
+  background-image: linear-gradient(to bottom, #107885, #F3926C);
+  background-image: -webkit-linear-gradient(top, #107885, #F3926C);
+  background-attachment: fixed;
+  background-color: #F3926C;
+}
+
+html.factory{
+  background-image: linear-gradient(to bottom, #107885, #FFF);
+  background-image: -webkit-linear-gradient(top, #107885, #FFF);
+  background-attachment: fixed;
+  background-color: #FFF;
+}
+
+html.speech{
+  background-image: linear-gradient(to bottom, #107885, #9064a6);
+  background-image: -webkit-linear-gradient(top, #107885, #9064a6);
+  background-attachment: fixed;
+  background-color: #9064a6;
+} 
+
+html.home{
+  background-image: linear-gradient(to bottom, #32344a, #59646e);
+  background-image: -webkit-linear-gradient(top, #32344a, #59646e);
+  background-attachment: fixed;
+  background-color: #59646e;
+} 
+
+tw-passage{
+  background-color: rgba(89, 100, 110, 0.55);
+  width: 100%;
+  margin:auto;
+  margin-bottom: 5%;
+  padding: 2em;
+	border-radius: 1em;
+}
+
+tw-passage h1{
+	font-family: Conv_Park Lane NF;
+}
+
+tw-passage span.start{
+	font-family: Limelight;
+}
+
+tw-passage span.writing{
+	font-family: Nothing You Could Do;
+}
+
+tw-story{
+	color: #fff;
+}
+
+tw-sidebar{
+	display: none
+}
+
+tw-link{
+	color: #A9C4A5
+}
+
+span.expand tw-link{
+	color: #AB9AAD
+}
+
+tw-link:hover{
+	color: #d19f5e
+}
+
+span.expand tw-link:hover{
+	color: #d19f5e
+}
+
+tw-link.visited{
+	color: #A9C4A5
+}
+
+tw-enchantment.enchantment-link{
+	color: #A9C4A5
+}
+
+tw-enchantment.enchantment-link.visited{
+	color: #A9C4A5
+}
+
+tw-enchantment.enchantment-link:hover{
+	color: #d19f5e
+}
+
+#book tw-enchantment.enchantment-link{
+	color: #AB9AAD
+}
+
+#book tw-enchantment.enchantment-link.visited{
+	color: #A9C4A5
+}
+
+#book tw-enchantment.enchantment-link:hover{
+	color: #d19f5e
+}
