@@ -2,7 +2,7 @@
 Te mirás en el espejo antes de ir a la escuela. Este año creciste tanto que necesitás agacharte para poder verte entera en el espejo. Mirás <span class="expand">[[tu guardapolvo negro->school_uniform-es]]</span> y pensás que el duelo se está por terminar. Dejás de mirarte al espejo y empezás a mirar la cama de tu hermana, ella sigue durmiendo, tal vez [[habría que despertarla->wake_her_up-es]].
 
 ::school_uniform-es [childhood] <675,639>
-Se está por cumplir un año de la muerte de tu padre. Murió poco después de que saliste del hospital. Tu hermana te contó que mientras estabas enferma él le pidió a Dios que lo deje morir en tu lugar. Te dijo que vos eras la que se tendría que haber muerto...
+Se está por cumplir un año de la muerte de tu padre. Murió poco después de que salieses del hospital. Tu hermana te contó que mientras estabas enferma él le pidió a Dios que lo dejase morir en tu lugar. Te dijo que vos eras la que se tendría que haber muerto...
 (live: 8s)[
 Estaba muy enojada con vos ese día.(stop:)]\
 (live: 12s)[
@@ -14,7 +14,7 @@ no dijo nada y se quedó un buen rato sorbiendo mate.(stop:)]\
 
 ::wake_her_up-es [childhood] <826,640>
 Por ahí deberías despertarla con un beso en la frente.
-(click-replace: "con un beso en la frente")[sacudiendola por los hombros]\
+(click-replace: "con un beso en la frente")[sacudiéndola por los hombros]\
 (click-replace: "sacudiéndola por los hombros")[usando un vaso de agua fría]\
 (click-replace: "usando un vaso de agua fría")[con la ayuda de mamá]\
 
@@ -138,7 +138,7 @@ Así que ella te abraza.](stop:)
 
 ::knock-es [home] <705,2650>
 Hay gente discutiendo afuera. Es tarde, así que agarrás una escoba, te sentís más segura. 
-Te arrimás despacito a la puerta y espiás por el ojo de la cerradura. (click-append: "Te arrimás despacito hacia la puerta y espiás por el ojo de la cerradura.")[ <span class="expand">[[Son los militares->military-es]].</span> [[Tocan el timbre.->open_door-es]]]
+Te arrimás despacito hacia la puerta y espiás por el ojo de la cerradura. (click-append: "Te arrimás despacito hacia la puerta y espiás por el ojo de la cerradura.")[ <span class="expand">[[Son los militares->military-es]].</span> [[Tocan el timbre.->open_door-es]]]
 
 ::open_door-es [home] <705,2780>
 Abrís la puerta con cautela, con la escoba aferrada a tu mano izquierda. 
