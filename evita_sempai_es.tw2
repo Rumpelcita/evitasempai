@@ -192,7 +192,7 @@ Tu nariz se llena de olor a papel quemado. (text-style:"blur")[Ahora es demasiad
 <span class="writing">Para mi China querida.
 Evita</span>(stop:)]
 
-(live: 10s)[Siempre lo leés un poco antes de irte a dormir. Le prestás mucha antención a la dedicatoria. (click-append: "inscription.")[Te dijo querida.](stop:)]
+(live: 10s)[Siempre lo leés un poco antes de irte a dormir. Le prestás mucha antención a la dedicatoria. (click-append: "dedicatoria.")[Te dijo querida.](stop:)]
 
 (live: 16s)[Te preocupa que lo haya escrito a las apuradas, siempre está muy ocupada. Seguro se enfermó de tanto trabajar.(stop:)]
 
@@ -201,7 +201,7 @@ Evita</span>(stop:)]
 ::speech-es [speech] <544,2071>
 La plaza está colmada de gente mirando el balcón. Tu hermana y su marido están con vos. Tu hermana te da la mano.
 
-(live: 6s)[Cuando ves a Eva en el balcón, le apretás la mano a tu hermana. Te asuta tanto verla así. Sonreía como el sol, hacía cosas sin pausa, y ahora...(stop:)]
+(live: 6s)[Cuando ves a Eva en el balcón, le apretás la mano a tu hermana. Te asusta tanto verla así. Sonreía como el sol, hacía cosas sin pausa, y ahora...(stop:)]
 
 (live: 16s)[Ahora no se puede ni parar.(stop:)]\
 
