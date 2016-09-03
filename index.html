@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Evita Sempai" startnode="2" creator="Twee2" creator-version="0.4.2" ifid="253f28c1-7d11-48fb-bf69-b0418b2647f4" format="Harlowe" options=""><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url(https://dl.dropboxusercontent.com/u/4823688/fonts/Park%20Lane%20NF/fonts.css);
+<tw-storydata name="Evita Sempai" startnode="2" creator="Twine" creator-version="2.0.11" ifid="253f28c1-7d11-48fb-bf69-b0418b2647f4" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url(https://dl.dropboxusercontent.com/u/4823688/fonts/Park%20Lane%20NF/fonts.css);
 
 @import url(https://fonts.googleapis.com/css?family=Limelight|Nothing+You+Could+Do);
 
@@ -72,10 +72,6 @@ tw-story{
 	color: #fff;
 }
 
-tw-sidebar{
-	display: none
-}
-
 tw-link{
 	color: #A9C4A5
 }
@@ -119,152 +115,178 @@ tw-enchantment.enchantment-link:hover{
 #book tw-enchantment.enchantment-link:hover{
 	color: #d19f5e
 }
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Header" tags="header" position="815,352">{
-(print: "&lt;script&gt;$('html').removeClass(\)&lt;/script&gt;")
-(if: (passage:)'s tags's length &gt; 0)[
-(print: "&lt;script&gt;$('html').addClass('" + (passage:)'s tags.join(' ') + "'\)&lt;/script&gt;")
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="Header" tags="header" position="815,352">{
+(print: &quot;&lt;script&gt;$(&#39;html&#39;).removeClass(\)&lt;/script&gt;&quot;)
+(if: (passage:)&#39;s tags&#39;s length &gt; 0)[
+(print: &quot;&lt;script&gt;$(&#39;html&#39;).addClass(&#39;&quot; + (passage:)&#39;s tags.join(&#39; &#39;) + &quot;&#39;\)&lt;/script&gt;&quot;)
 ]
-}</tw-passagedata><tw-passagedata pid="2" name="start" tags="childhood" position="673,351">&lt;h1&gt;Evita Sempai&lt;/h1&gt;
+}</tw-passagedata>
+<tw-passagedata pid="2" name="start" tags="childhood" position="673,351">&lt;h1&gt;Evita Sempai&lt;/h1&gt;
 
-&lt;span class="start"&gt;By Florencia Rumpel Rodriguez
+&lt;span class=&quot;start&quot;&gt;By Florencia Rumpel Rodriguez
 
-[[In English-&gt;start-tale]].    [[En español-&gt;start_tale-es]].&lt;/span&gt;</tw-passagedata><tw-passagedata pid="3" name="start-tale" tags="childhood" position="675,489">You look at the mirror before leaving the house for school. You have grown so much this year, that you need to hunch for your reflection to fit in the frame. You look at your &lt;span class="expand"&gt;[[black school uniform-&gt;school_uniform]]&lt;/span&gt; and think the mourning should be over soon. Afterwards, you look away from the mirror and towards your sister's bed. She's still sleeping, maybe you should [[wake her up]].</tw-passagedata><tw-passagedata pid="4" name="school_uniform" tags="childhood" position="675,639">It's been almost a year since your father died. It happened shortly after you were discharged from the hospital. Your sister told you that while you were ill he had asked God to switch places with you. She said you were the one who was supposed to die...
+[[In English-&gt;start-tale]].    [[En español-&gt;start_tale-es]].&lt;/span&gt;</tw-passagedata>
+<tw-passagedata pid="3" name="start-tale" tags="childhood" position="675,489">You look at the mirror before leaving the house for school. You have grown so much this year, that you need to hunch for your reflection to fit in the frame. You look at your &lt;span class=&quot;expand&quot;&gt;[[black school uniform-&gt;school_uniform]]&lt;/span&gt; and think the mourning should be over soon. Afterwards, you look away from the mirror and towards your sister&#39;s bed. She&#39;s still sleeping, maybe you should [[wake her up]].</tw-passagedata>
+<tw-passagedata pid="4" name="school_uniform" tags="childhood" position="675,639">It&#39;s been almost a year since your father died. It happened shortly after you were discharged from the hospital. Your sister told you that while you were ill he had asked God to switch places with you. She said you were the one who was supposed to die...
 (live: 8s)[
 She was really mad at you back then.(stop:)]\
 (live: 12s)[
 When you asked mum about it...(stop:)]\
 (live: 16s)[
-She'd gone silent and taken a long sip of mate.(stop:)]\
+She&#39;d gone silent and taken a long sip of mate.(stop:)]\
 
-(live: 22s)[You turn away from the mirror and look at your sister, maybe you should [[wake her up]]. (stop:)]</tw-passagedata><tw-passagedata pid="5" name="wake her up" tags="childhood" position="826,640">Maybe you should kiss her forehead to wake her up.
-(click-replace: "kiss her forehead")[shake her shoulders]\
-(click-replace: "shake her shoulders")[use a glass of cold water]\
-(click-replace: "use a glass of cold water")[ask mum]\
+(live: 22s)[You turn away from the mirror and look at your sister, maybe you should [[wake her up]]. (stop:)]</tw-passagedata>
+<tw-passagedata pid="5" name="wake her up" tags="childhood" position="826,640">Maybe you should kiss her forehead to wake her up.
+(click-replace: &quot;kiss her forehead&quot;)[shake her shoulders]\
+(click-replace: &quot;shake her shoulders&quot;)[use a glass of cold water]\
+(click-replace: &quot;use a glass of cold water&quot;)[ask mum]\
 
 (live: 5s)[\
-Your mum enters the room. She kisses your sister on the forehead and tells her it's time to go to school.(stop:)]\
+Your mum enters the room. She kisses your sister on the forehead and tells her it&#39;s time to go to school.(stop:)]\
 (live: 8s)[
-She turns your way, pats your head and tells you to [[go to the kitchen for breakfast]].(stop:)]</tw-passagedata><tw-passagedata pid="6" name="go to the kitchen for breakfast" tags="childhood" position="825,789">&lt;div id="book"&gt;You have some toast with margarine and some mate. It's too bitter, but you try to drink it up without making faces.(live: 8s)[ Today is the day you could take the teaching job.(stop:)](live: 10s)[ Although your father didn't want you to teach...(stop:)]
+She turns your way, pats your head and tells you to [[go to the kitchen for breakfast]].(stop:)]</tw-passagedata>
+<tw-passagedata pid="6" name="go to the kitchen for breakfast" tags="childhood" position="825,789">&lt;div id=&quot;book&quot;&gt;You have some toast with margarine and some mate. It&#39;s too bitter, but you try to drink it up without making faces.(live: 8s)[ Today is the day you could take the teaching job.(stop:)](live: 10s)[ Although your father didn&#39;t want you to teach...(stop:)]
 
 (live: 12s)[You should refuse. After all, your father gave up so much for you. Why is giving this up so hard?(stop:)]
 
-(live: 14s)[Your sister comes in. Her uniform is white(click-replace: "Her uniform is white")[Underneath she has a purple skirt with a white shirt](click-replace: "Underneath she has a purple skirt with a white shirt")[Her ribbon is pink]. Your mum doesn't like it.(stop:)]
+(live: 14s)[Your sister comes in. Her uniform is white(click-replace: &quot;Her uniform is white&quot;)[Underneath she has a purple skirt with a white shirt](click-replace: &quot;Underneath she has a purple skirt with a white shirt&quot;)[Her ribbon is pink]. Your mum doesn&#39;t like it.(stop:)]
 (live: 20s)[\
 She tells your sister to change.(stop:)]
 (live: 24s)[\
 Your sister explains that the mourning is almost over.(stop:)]
 (live: 28s)[\
-Your mum's gaze hardens and she repeats her command, her voice like steel.(stop:)]
+Your mum&#39;s gaze hardens and she repeats her command, her voice like steel.(stop:)]
 (live: 32s)[
-Your sister runs crying to her room. [[You leave for school]] and wait for her at the park.(stop:)]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="You leave for school" tags="childhood" position="828,925">Your sister catches up with you. She's all in black now, and crying harder. "Well, at least you are taking the teaching job, right?" she asks.
+Your sister runs crying to her room. [[You leave for school]] and wait for her at the park.(stop:)]&lt;/div&gt;</tw-passagedata>
+<tw-passagedata pid="7" name="You leave for school" tags="childhood" position="828,925">Your sister catches up with you. She&#39;s all in black now, and crying harder. &quot;Well, at least you are taking the teaching job, right?&quot; she asks.
 (live: 6s)[
-[[You don't know what to tell her]].(stop:)]</tw-passagedata><tw-passagedata pid="8" name="You don't know what to tell her" tags="factory" position="828,1060">(transition: "dissolve")[You look in the mirror before leaving the house for work. You like how the shirt and skirt look on you, but you think your hair will get in the way. You set it up in a bun and make a mental note to cut it short soon.
+[[You don&#39;t know what to tell her]].(stop:)]</tw-passagedata>
+<tw-passagedata pid="8" name="You don&#39;t know what to tell her" tags="factory" position="828,1060">(transition: &quot;dissolve&quot;)[You look in the mirror before leaving the house for work. You like how the shirt and skirt look on you, but you think your hair will get in the way. You set it up in a bun and make a mental note to cut it short soon.
 
-[[You leave for breakfast-&gt;You go and have breakfast with your mum.]]]</tw-passagedata><tw-passagedata pid="9" name="You go and have breakfast with your mum." tags="factory" position="828,1210">You don't see your sister in the kitchen. You remember she was meeting with her fiancée today.
+[[You leave for breakfast-&gt;You go and have breakfast with your mum.]]]</tw-passagedata>
+<tw-passagedata pid="9" name="You go and have breakfast with your mum." tags="factory" position="828,1210">You don&#39;t see your sister in the kitchen. You remember she was meeting with her fiancée today.
 
 You look at your mum, she is getting old and it would be nice to have a house again so she could settle down, but you make just enough money at your work to get by. You hope that things improve once your sister marries.
 
-Your mum stares at you and smiles, you kiss her forehead and [[leave for work]].</tw-passagedata><tw-passagedata pid="10" name="leave for work" tags="factory" position="828,1360">You get to work. Your boss lets you know there will be people coming to visit the factory later today and tells you to [[start working]].</tw-passagedata><tw-passagedata pid="11" name="start working" tags="factory" position="828,1510">You sit down and get the machine started. You start sewing...
-(click-append: "You start sewing...")[
+Your mum stares at you and smiles, you kiss her forehead and [[leave for work]].</tw-passagedata>
+<tw-passagedata pid="10" name="leave for work" tags="factory" position="828,1360">You get to work. Your boss lets you know there will be people coming to visit the factory later today and tells you to [[start working]].</tw-passagedata>
+<tw-passagedata pid="11" name="start working" tags="factory" position="828,1510">You sit down and get the machine started. You start sewing...
+(click-append: &quot;You start sewing...&quot;)[
 You wonder how your sister is doing with her date, she seemed nervous about getting married next week.
 
 (live: 2s)[One tie is done...(stop:)]\
 ]\
-(click-append: "One tie is done...")[
+(click-append: &quot;One tie is done...&quot;)[
 You could have married some time ago. Now it seems so long ago.
 
 (live: 2s)[Two ties are done...(stop:)]\
 ]\
-(click-append: "Two ties are done...")[
+(click-append: &quot;Two ties are done...&quot;)[
 But leaving your mum on her own felt wrong.
 
 (live: 2s)[Three ties are done...(stop:)]\
 ]\
-(click-append: "Three ties are done...")[
+(click-append: &quot;Three ties are done...&quot;)[
 She gave up so much for you.
 
 (live: 2s)[Four ties are done...(stop:)]\
 ]\
-(click-append: "Four ties are done...")[
+(click-append: &quot;Four ties are done...&quot;)[
 So did your dad.
 
 (live: 2s)[Five ties are done...(stop:)]\
 ]\
-(click-append: "Five ties are done...")[
+(click-append: &quot;Five ties are done...&quot;)[
 Staying with mum was the least you could do.
 
 (live: 2s)[Six ties are done...(stop:)]\
 ]\
-(click-append: "Six ties are done...")[
-Besides, it's not like you liked the guy.
+(click-append: &quot;Six ties are done...&quot;)[
+Besides, it&#39;s not like you liked the guy.
 
 (live: 2s)[Seven ties are done...(stop:)]\
-(click-append: "Seven ties are done...")[
+(click-append: &quot;Seven ties are done...&quot;)[
 Nor any other guy for that matter.
 (live: 4s)[
 [[Your boss is calling for you]].]]\
-(stop:)]</tw-passagedata><tw-passagedata pid="12" name="Your boss is calling for you" tags="factory" position="830,1641">You and your coworkers are gathered in the main hall. A young lady enters the factory. She is followed by two guys in suits. Her name is &lt;span class="expand"&gt;[[Eva]]&lt;/span&gt;.
-(live: 14s)[(go-to: "eva_does_her_thing")(stop:)]</tw-passagedata><tw-passagedata pid="13" name="Now it's your turn" tags="factory" position="830,1791">A wave of self-consciousness hits your body. (click-append: "A wave of self-consciousness hits your body.")[ You realize that your hair is a mess] (click-append: "is a mess")[, that your clothes are old and worn] (click-append: "old and worn")[, and that your hands are rough from work.] 
+(stop:)]</tw-passagedata>
+<tw-passagedata pid="12" name="Your boss is calling for you" tags="factory" position="830,1641">You and your coworkers are gathered in the main hall. A young lady enters the factory. She is followed by two guys in suits. Her name is &lt;span class=&quot;expand&quot;&gt;[[Eva]]&lt;/span&gt;.
+(live: 14s)[(go-to: &quot;eva_does_her_thing&quot;)(stop:)]</tw-passagedata>
+<tw-passagedata pid="13" name="Now it&#39;s your turn" tags="factory" position="830,1791">A wave of self-consciousness hits your body. (click-append: &quot;A wave of self-consciousness hits your body.&quot;)[ You realize that your hair is a mess] (click-append: &quot;is a mess&quot;)[, that your clothes are old and worn] (click-append: &quot;old and worn&quot;)[, and that your hands are rough from work.] 
 
 (live: 12s)[But Eva only seems to care about you.(stop:)]
 
-(live: 14s)["Is your job okay?"(stop:)]
-(live: 16s)["How are things going at home?"(stop:)]
-(live: 18s)["Is there anything you need?"(stop:)]
+(live: 14s)[&quot;Is your job okay?&quot;(stop:)]
+(live: 16s)[&quot;How are things going at home?&quot;(stop:)]
+(live: 18s)[&quot;Is there anything you need?&quot;(stop:)]
 (live: 20s)[She promises to help.(stop:)]
 (live: 22s)[
-[[You tell her about your life.]](stop:)]</tw-passagedata><tw-passagedata pid="14" name="You tell her about your life." tags="factory" position="830,1941">How your dad died. 
+[[You tell her about your life.]](stop:)]</tw-passagedata>
+<tw-passagedata pid="14" name="You tell her about your life." tags="factory" position="830,1941">How your dad died. 
 (live:1.5s)[How your sister will marry soon.(stop:)]
 (live: 3s)[Your hopes of finding a decent house to live in with your mum.(stop:)] 
-(live: 7s)[You start talking about how you refused the teaching job. (click-append: "You start talking about how you refused the teaching job.")[ 
-But you start to cry...](click-append: "But you start to cry...")[
+(live: 7s)[You start talking about how you refused the teaching job. (click-append: &quot;You start talking about how you refused the teaching job.&quot;)[ 
+But you start to cry...](click-append: &quot;But you start to cry...&quot;)[
 So she gives you a hug.](stop:)
 (live: 8.5s)[
 [[You feel that everything will be fine-&gt;trip_to_speech]].
 (stop:)]
-]</tw-passagedata><tw-passagedata pid="15" name="final_mirror" tags="home" position="830,2072">(transition: "dissolve")[You look in the mirror before going to bed. 
+]</tw-passagedata>
+<tw-passagedata pid="15" name="final_mirror" tags="home" position="830,2072">(transition: &quot;dissolve&quot;)[You look in the mirror before going to bed. 
 (live: 2s)[There are new wrinkles around your eyes.(stop:)] (live: 4s)[You have grown so old.(stop:)]
 (live: 6s)[You wonder what Eva would look like now.(stop:)]
 (live: 8s)[She died so young...(stop:)]
 (live: 10s)[
-[[The phone rings.]](stop:)]]</tw-passagedata><tw-passagedata pid="16" name="knock" tags="home" position="705,2650">You can hear people discussing outside. It's late, so you grab a broom, just to be sure. 
-You move slowly towards the door and take a peek. (click-append: "You move slowly towards the door and take a peek.")[ &lt;span class="expand"&gt;[[It's the military]].&lt;/span&gt; [[They ring the doorbell.-&gt;open_door]]]</tw-passagedata><tw-passagedata pid="17" name="open_door" tags="home" position="705,2780">You open the door slowly, the broom held tightly in your left hand. 
+[[The phone rings.]](stop:)]]</tw-passagedata>
+<tw-passagedata pid="16" name="knock" tags="home" position="705,2650">You can hear people discussing outside. It&#39;s late, so you grab a broom, just to be sure. 
+You move slowly towards the door and take a peek. (click-append: &quot;You move slowly towards the door and take a peek.&quot;)[ &lt;span class=&quot;expand&quot;&gt;[[It&#39;s the military]].&lt;/span&gt; [[They ring the doorbell.-&gt;open_door]]]</tw-passagedata>
+<tw-passagedata pid="17" name="open_door" tags="home" position="705,2780">You open the door slowly, the broom held tightly in your left hand. 
 
 The thugs look at you and laugh.  
-(live: 2s)["There are some thieves running through the rooftops," they say.(stop:)]
-(live: 4s)["We need you to let us in to catch them."(stop:)]
-(live: 6s)[You comply and lead them upstairs. (click-append: "You comply and lead them upstairs.")[ 
-"Thank you, that will be all."
-(live: 8s)[(go-to: "boom")(stop:)](stop:)](stop:)]</tw-passagedata><tw-passagedata pid="18" name="The phone rings." tags="home" position="705,2222">It's your sister.
+(live: 2s)[&quot;There are some thieves running through the rooftops,&quot; they say.(stop:)]
+(live: 4s)[&quot;We need you to let us in to catch them.&quot;(stop:)]
+(live: 6s)[You comply and lead them upstairs. (click-append: &quot;You comply and lead them upstairs.&quot;)[ 
+&quot;Thank you, that will be all.&quot;
+(live: 8s)[(go-to: &quot;boom&quot;)(stop:)](stop:)](stop:)]</tw-passagedata>
+<tw-passagedata pid="18" name="The phone rings." tags="home" position="705,2222">It&#39;s your sister.
 
 (live: 2s)[She says the military went to her house.(stop:)]
 (live: 6s)[They are doing rounds through the neighborhood.(stop:)]
-(live: 10s)[They shouldn't be far from your house now.(stop:)]
-(live: 14s)[You thank her and [[hang up]].(stop:)]</tw-passagedata><tw-passagedata pid="19" name="hang up" tags="home" position="705,2372">If the military are making rounds, having Eva's book around the house might be a problem. Especially since they took your brother in law away. He's been missing for months.
+(live: 10s)[They shouldn&#39;t be far from your house now.(stop:)]
+(live: 14s)[You thank her and [[hang up]].(stop:)]</tw-passagedata>
+<tw-passagedata pid="19" name="hang up" tags="home" position="705,2372">If the military are making rounds, having Eva&#39;s book around the house might be a problem. Especially since they took your brother in law away. He&#39;s been missing for months.
 
-The book is hidden under some floorboards in your bedroom. It should be safe enough in there, but the military might find it if they are thorough. [[You should act quickly-&gt;be found]].</tw-passagedata><tw-passagedata pid="20" name="be found" tags="home" position="830,2522">Eva lent you an ear, gave you her help. Of all the people in your life, she was the kindest. That book is the only thing you have left from her. [[You should keep it-&gt;knock]].
+The book is hidden under some floorboards in your bedroom. It should be safe enough in there, but the military might find it if they are thorough. [[You should act quickly-&gt;be found]].</tw-passagedata>
+<tw-passagedata pid="20" name="be found" tags="home" position="830,2522">Eva lent you an ear, gave you her help. Of all the people in your life, she was the kindest. That book is the only thing you have left from her. [[You should keep it-&gt;knock]].
 
-Though if you get in trouble for this, your mum will suffer, and so will your sister. Would Eva want you to go to jail or worse over a memento? She knows, surely wherever she may be, that you love her and won't forget her. [[You should burn her book at the stove-&gt;burn]]. It's winter, so you don't think it will be too suspicious.</tw-passagedata><tw-passagedata pid="21" name="burn" tags="home" position="979,2534">You have the book in your hand. You try to keep your pulse steady while you open the lid of the stove.
+Though if you get in trouble for this, your mum will suffer, and so will your sister. Would Eva want you to go to jail or worse over a memento? She knows, surely wherever she may be, that you love her and won&#39;t forget her. [[You should burn her book at the stove-&gt;burn]]. It&#39;s winter, so you don&#39;t think it will be too suspicious.</tw-passagedata>
+<tw-passagedata pid="21" name="burn" tags="home" position="979,2534">You have the book in your hand. You try to keep your pulse steady while you open the lid of the stove.
 
-[[You push the book inside and close the lid]].</tw-passagedata><tw-passagedata pid="22" name="You push the book inside and close the lid" tags="home" position="841,2649">The smell of burnt paper fills your nostrils. (text-style:"blur")[Now it's too late to save the book.] [[You hear noises outside-&gt;knock]].</tw-passagedata><tw-passagedata pid="23" name="trip_to_speech" tags="speech" position="667,1939">(transition: "dissolve")[You look in the mirror, getting ready to see Eva's speech. You know her health has been failing lately. You hope this means she will be getting better soon.
+[[You push the book inside and close the lid]].</tw-passagedata>
+<tw-passagedata pid="22" name="You push the book inside and close the lid" tags="home" position="841,2649">The smell of burnt paper fills your nostrils. (text-style:&quot;blur&quot;)[Now it&#39;s too late to save the book.] [[You hear noises outside-&gt;knock]].</tw-passagedata>
+<tw-passagedata pid="23" name="trip_to_speech" tags="speech" position="667,1939">(transition: &quot;dissolve&quot;)[You look in the mirror, getting ready to see Eva&#39;s speech. You know her health has been failing lately. You hope this means she will be getting better soon.
 
-(live: 8s)[You are looking really pretty today. You cut your hair yesterday and your mum helped you sew a new suit. She's been doing better ever since Eva helped you get the house back.(stop:)]
+(live: 8s)[You are looking really pretty today. You cut your hair yesterday and your mum helped you sew a new suit. She&#39;s been doing better ever since Eva helped you get the house back.(stop:)]
 
 (live: 18s)[Now you finally have a house of your own.(stop:)]
 
-(live: 22s)[You turn away from the mirror and [[look at the book she gave you]]. It's on the nightstand.(stop:)]]</tw-passagedata><tw-passagedata pid="24" name="look at the book she gave you" tags="speech" position="542,1941">&lt;div id="book"&gt;It's called *La Razón de mi Vida*. It has her picture on the cover, she's smiling. 
+(live: 22s)[You turn away from the mirror and [[look at the book she gave you]]. It&#39;s on the nightstand.(stop:)]]</tw-passagedata>
+<tw-passagedata pid="24" name="look at the book she gave you" tags="speech" position="542,1941">&lt;div id=&quot;book&quot;&gt;It&#39;s called *La Razón de mi Vida*. It has her picture on the cover, she&#39;s smiling. 
 
 (live: 4s)[When you open the book you can read the inscription:
-&lt;span class="writing"&gt;Para mi China querida.
+&lt;span class=&quot;writing&quot;&gt;Para mi China querida.
 Evita&lt;/span&gt;(stop:)]
 
-(live: 10s)[You always read a bit of the book before you go to sleep. You pay special attention to her inscription. (click-append: "inscription.")[ She called you darling.](stop:)]
+(live: 10s)[You always read a bit of the book before you go to sleep. You pay special attention to her inscription. (click-append: &quot;inscription.&quot;)[ She called you darling.](stop:)]
 
-(live: 16s)[It worries you that she wrote it in a hurry, she's always in a hurry. That's probably why she got so sick in the first place.(stop:)]
+(live: 16s)[It worries you that she wrote it in a hurry, she&#39;s always in a hurry. That&#39;s probably why she got so sick in the first place.(stop:)]
 
-(live: 20s)[But it doesn't matter. [[You will see her today.]] (stop:)]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="You will see her today." tags="speech" position="544,2071">The Plaza is packed with people staring at the balcony. Your sister and her husband decided to come with you. Your sister is holding your hand.
+(live: 20s)[But it doesn&#39;t matter. [[You will see her today.]] (stop:)]&lt;/div&gt;</tw-passagedata>
+<tw-passagedata pid="25" name="You will see her today." tags="speech" position="544,2071">The Plaza is packed with people staring at the balcony. Your sister and her husband decided to come with you. Your sister is holding your hand.
 
-(live: 6s)[When you see Eva on the balcony, you squeeze your sister's hand tighter. It's so scary to see her like this. She used to smile like the sun, to do things without pause, and now...(stop:)]
+(live: 6s)[When you see Eva on the balcony, you squeeze your sister&#39;s hand tighter. It&#39;s so scary to see her like this. She used to smile like the sun, to do things without pause, and now...(stop:)]
 
 (live: 16s)[Now she cannot even stand by herself.(stop:)]\
 
@@ -272,34 +294,41 @@ Evita&lt;/span&gt;(stop:)]
 
 (live: 20s)[You know she loves you.(stop:)]\
 
-(live: 22s)[(text-style:"blur")[She loves everyone.(stop:)]]\
+(live: 22s)[(text-style:&quot;blur&quot;)[She loves everyone.(stop:)]]\
 
-(live: 24s)[(text-style:"blur")[[[You hold onto your sister.-&gt;final_mirror]](stop:)]]</tw-passagedata><tw-passagedata pid="26" name="gone" tags="home" position="949,2781">They are gone.
+(live: 24s)[(text-style:&quot;blur&quot;)[[[You hold onto your sister.-&gt;final_mirror]](stop:)]]</tw-passagedata>
+<tw-passagedata pid="26" name="gone" tags="home" position="949,2781">They are gone.
 
-(live: 8s)[(reload:)(stop:)]</tw-passagedata><tw-passagedata pid="27" name="boom" tags="home" position="824,2782">(live: 2s)[As you start going downstairs you can hear the footsteps on the ceiling. They match your heartbeat.(stop:)]
+(live: 8s)[(reload:)(stop:)]</tw-passagedata>
+<tw-passagedata pid="27" name="boom" tags="home" position="824,2782">(live: 2s)[As you start going downstairs you can hear the footsteps on the ceiling. They match your heartbeat.(stop:)]
 
-(live: 4s)[(transition: "shudder")[(text-colour: "#955452")[
+(live: 4s)[(transition: &quot;shudder&quot;)[(text-colour: &quot;#955452&quot;)[
 &lt;h3&gt;BOOM!&lt;/h3&gt;
 ]\
 ]\
 (stop:)]\
-(live: 5s)[(transition: "shudder")[(text-colour: "#955452")[
+(live: 5s)[(transition: &quot;shudder&quot;)[(text-colour: &quot;#955452&quot;)[
 &lt;h3&gt;BOOM!&lt;/h3&gt;
 ]\
 ]\
 (stop:)]\
-(live: 6s)[(transition: "shudder")[(text-colour: "#955452")[
+(live: 6s)[(transition: &quot;shudder&quot;)[(text-colour: &quot;#955452&quot;)[
 &lt;h3&gt;BOOM!&lt;/h3&gt;
 ]\
 ]\
 (stop:)]\
 (live: 9s)[
-(go-to: "gone")(stop:)]</tw-passagedata><tw-passagedata pid="28" name="Eva" tags="factory" position="705,1791">The first lady. She used to be an actress. Today she is wearing a pencil skirt with a white shirt and a short coat. Her hair is a light shade of blonde, it's wavy and reaches her shoulders.
-(live: 14s)[(go-to: "eva_does_her_thing")(stop:)]</tw-passagedata><tw-passagedata pid="29" name="eva_does_her_thing" tags="factory" position="964,1644">She smiles like the sun and greets every single one of you with a kiss on the cheek. When it's your turn, you can feel yourself blush. Afterwards, your boss shows her around, she observes and ponders the place around her.
+(go-to: &quot;gone&quot;)(stop:)]</tw-passagedata>
+<tw-passagedata pid="28" name="Eva" tags="factory" position="705,1791">The first lady. She used to be an actress. Today she is wearing a pencil skirt with a white shirt and a short coat. Her hair is a light shade of blonde, it&#39;s wavy and reaches her shoulders.
+(live: 14s)[(go-to: &quot;eva_does_her_thing&quot;)(stop:)]</tw-passagedata>
+<tw-passagedata pid="29" name="eva_does_her_thing" tags="factory" position="964,1644">She smiles like the sun and greets every single one of you with a kiss on the cheek. When it&#39;s your turn, you can feel yourself blush. Afterwards, your boss shows her around, she observes and ponders the place around her.
 
-(live: 10s)[After a while, she decides she has seen enough and starts talking to all the workers, one by one and in private. [[Now it's your turn]].(stop:)]</tw-passagedata><tw-passagedata pid="30" name="It's the military" tags="home" position="578,2768">As everyone knows by now a group of burly guys, dressed like movie mobsters, standing in front of a green Ford Falcon are what the military looks like now. Just a bunch of thugs. 
+(live: 10s)[After a while, she decides she has seen enough and starts talking to all the workers, one by one and in private. [[Now it&#39;s your turn]].(stop:)]</tw-passagedata>
+<tw-passagedata pid="30" name="It&#39;s the military" tags="home" position="578,2768">As everyone knows by now a group of burly guys, dressed like movie mobsters, standing in front of a green Ford Falcon are what the military looks like now. Just a bunch of thugs. 
 
-[[They ring the doorbell again-&gt;open_door]].</tw-passagedata><tw-passagedata pid="31" name="start_tale-es" tags="childhood" position="675,489">Te mirás en el espejo antes de ir a la escuela. Este año creciste tanto que necesitás agacharte para poder verte entera en el espejo. Mirás &lt;span class="expand"&gt;[[tu guardapolvo negro-&gt;school_uniform-es]]&lt;/span&gt; y pensás que el duelo se está por terminar. Dejás de mirarte al espejo y empezás a mirar la cama de tu hermana, ella sigue durmiendo, tal vez [[habría que despertarla-&gt;wake_her_up-es]].</tw-passagedata><tw-passagedata pid="32" name="school_uniform-es" tags="childhood" position="675,639">Se está por cumplir un año de la muerte de tu padre. Murió poco después de que salieses del hospital. Tu hermana te contó que mientras estabas enferma él le pidió a Dios que lo dejase morir en tu lugar. Te dijo que vos eras la que se tendría que haber muerto...
+[[They ring the doorbell again-&gt;open_door]].</tw-passagedata>
+<tw-passagedata pid="31" name="start_tale-es" tags="childhood" position="675,489">Te mirás en el espejo antes de ir a la escuela. Este año creciste tanto que necesitás agacharte para poder verte entera en el espejo. Mirás &lt;span class=&quot;expand&quot;&gt;[[tu guardapolvo negro-&gt;school_uniform-es]]&lt;/span&gt; y pensás que el duelo se está por terminar. Dejás de mirarte al espejo y empezás a mirar la cama de tu hermana, ella sigue durmiendo, tal vez [[habría que despertarla-&gt;wake_her_up-es]].</tw-passagedata>
+<tw-passagedata pid="32" name="school_uniform-es" tags="childhood" position="675,639">Se está por cumplir un año de la muerte de tu padre. Murió poco después de que salieses del hospital. Tu hermana te contó que mientras estabas enferma él le pidió a Dios que lo dejase morir en tu lugar. Te dijo que vos eras la que se tendría que haber muerto...
 (live: 8s)[
 Estaba muy enojada con vos ese día.(stop:)]\
 (live: 12s)[
@@ -307,19 +336,21 @@ Cuando le preguntaste a tu mamá sobre el tema...(stop:)]\
 (live: 16s)[
 no dijo nada y se quedó un buen rato sorbiendo mate.(stop:)]\
 
-(live: 22s)[Dejás de mirarte al espejo y empezás a mirar a tu hermana, ella sigue durmiendo, tal vez [[habría que despertarla-&gt;wake_her_up-es]].(stop:)]</tw-passagedata><tw-passagedata pid="33" name="wake_her_up-es" tags="childhood" position="826,640">Por ahí deberías despertarla con un beso en la frente.
-(click-replace: "con un beso en la frente")[sacudiéndola por los hombros]\
-(click-replace: "sacudiéndola por los hombros")[usando un vaso de agua fría]\
-(click-replace: "usando un vaso de agua fría")[con la ayuda de mamá]\
+(live: 22s)[Dejás de mirarte al espejo y empezás a mirar a tu hermana, ella sigue durmiendo, tal vez [[habría que despertarla-&gt;wake_her_up-es]].(stop:)]</tw-passagedata>
+<tw-passagedata pid="33" name="wake_her_up-es" tags="childhood" position="826,640">Por ahí deberías despertarla con un beso en la frente.
+(click-replace: &quot;con un beso en la frente&quot;)[sacudiéndola por los hombros]\
+(click-replace: &quot;sacudiéndola por los hombros&quot;)[usando un vaso de agua fría]\
+(click-replace: &quot;usando un vaso de agua fría&quot;)[con la ayuda de mamá]\
 
 (live: 5s)[\
 Tu mamá entra al cuarto. Besa a tu hermana en la frente y le dice que es hora de ir a la escuela.(stop:)]\
 (live: 8s)[
-Te mira, te acaricia el pelo y te pide que [[vayas a la cocina a desayunar-&gt;breakfast_school-es]].(stop:)]</tw-passagedata><tw-passagedata pid="34" name="breakfast_school-es" tags="childhood" position="825,789">&lt;div id="book"&gt;Comés unas tostadas con margarina y tomás un poco de mate. Está muy amargo, pero tratás de tomarlo sin poner cara de asco.(live: 8s)[ Hoy es el día en que podrías aceptar el trabajo de maestra.(stop:)](live: 10s)[ Aunque tu padre no quería que te dedicaras a la docencia...(stop:)]
+Te mira, te acaricia el pelo y te pide que [[vayas a la cocina a desayunar-&gt;breakfast_school-es]].(stop:)]</tw-passagedata>
+<tw-passagedata pid="34" name="breakfast_school-es" tags="childhood" position="825,789">&lt;div id=&quot;book&quot;&gt;Comés unas tostadas con margarina y tomás un poco de mate. Está muy amargo, pero tratás de tomarlo sin poner cara de asco.(live: 8s)[ Hoy es el día en que podrías aceptar el trabajo de maestra.(stop:)](live: 10s)[ Aunque tu padre no quería que te dedicaras a la docencia...(stop:)]
 
 (live: 12s)[Deberías rechazar ese trabajo. Después de todo, tu padre dio tanto por vos. ¿Por qué te cuesta tanto renunciar a esto?(stop:)]
 
-(live: 14s)[Tu hermana entra a la cocina. Su delantal es blanco(click-replace: "Su delantal es blanco")[Abajo lleva una pollera violeta combinada con una camisa blanca](click-replace: "Abajo lleva una pollera violeta combinada con una camisa blanca")[Su moño es rosa]. A tu mamá no le gusta.(stop:)]
+(live: 14s)[Tu hermana entra a la cocina. Su delantal es blanco(click-replace: &quot;Su delantal es blanco&quot;)[Abajo lleva una pollera violeta combinada con una camisa blanca](click-replace: &quot;Abajo lleva una pollera violeta combinada con una camisa blanca&quot;)[Su moño es rosa]. A tu mamá no le gusta.(stop:)]
 (live: 20s)[\
 Le pide a tu hermana que se cambie.(stop:)]
 (live: 24s)[\
@@ -327,113 +358,132 @@ Tu hermana le explica que el duelo se está por terminar.(stop:)]
 (live: 28s)[\
 La mirada de tu mamá se endurece y repite su orden, con la voz como el acero.(stop:)]
 (live: 32s)[
-Tu hermana corre llorando a la pieza. [[Vos salís para la escuela-&gt;leave_to_school-es]] y la esperás en la plaza.(stop:)]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="35" name="leave_to_school-es" tags="childhood" position="828,925">Tu hermana te alcanza. Ahora está toda vestida de negro y llorando con más fuerza. "Bueno, al menos vas a ser maestra. ¿No?" te pregunta.
+Tu hermana corre llorando a la pieza. [[Vos salís para la escuela-&gt;leave_to_school-es]] y la esperás en la plaza.(stop:)]&lt;/div&gt;</tw-passagedata>
+<tw-passagedata pid="35" name="leave_to_school-es" tags="childhood" position="828,925">Tu hermana te alcanza. Ahora está toda vestida de negro y llorando con más fuerza. &quot;Bueno, al menos vas a ser maestra. ¿No?&quot; te pregunta.
 (live: 6s)[
-[[No sabés qué decirle-&gt;mirror_work-es]].(stop:)]</tw-passagedata><tw-passagedata pid="36" name="mirror_work-es" tags="factory" position="828,1060">(transition: "dissolve")[Te mirás en el espejo antes de salir para el trabajo. Te gusta cómo te quedan la camisa y la pollera, pero creés que tu pelo te va a molestar. Lo atás en un rodete y pensás en que tendrías que cortarlo.
+[[No sabés qué decirle-&gt;mirror_work-es]].(stop:)]</tw-passagedata>
+<tw-passagedata pid="36" name="mirror_work-es" tags="factory" position="828,1060">(transition: &quot;dissolve&quot;)[Te mirás en el espejo antes de salir para el trabajo. Te gusta cómo te quedan la camisa y la pollera, pero creés que tu pelo te va a molestar. Lo atás en un rodete y pensás en que tendrías que cortarlo.
 
-[[Te vas a desayunar.-&gt;breakfast_mum-es]]]</tw-passagedata><tw-passagedata pid="37" name="breakfast_mum-es" tags="factory" position="828,1210">No ves a tu hermana en la cocina y te acordás de que hoy se iba a encontrar con su novio.
+[[Te vas a desayunar.-&gt;breakfast_mum-es]]]</tw-passagedata>
+<tw-passagedata pid="37" name="breakfast_mum-es" tags="factory" position="828,1210">No ves a tu hermana en la cocina y te acordás de que hoy se iba a encontrar con su novio.
 
 Mirás a tu mamá, se está poniendo vieja y sería bueno tener una casa de nuevo para que esté más tranquila, pero ganás lo justo. Esperás que las cosas mejoren después de que se case tu hermana.
 
-Tu mamá te mira y te sonríe, la besas en la frente y [[salís para el trabajo-&gt;leave_for_work-es]].</tw-passagedata><tw-passagedata pid="38" name="leave_for_work-es" tags="factory" position="828,1360">Llegás al trabajo. Tu jefe te comenta que hoy vienen visitas a la fábrica y te pide que [[empieces a trabajar-&gt;start_working-es]].</tw-passagedata><tw-passagedata pid="39" name="start_working-es" tags="factory" position="828,1510">Te sentás y preparás la máquina. Empezás a coser...
-(click-append: "Empezás a coser...")[
+Tu mamá te mira y te sonríe, la besas en la frente y [[salís para el trabajo-&gt;leave_for_work-es]].</tw-passagedata>
+<tw-passagedata pid="38" name="leave_for_work-es" tags="factory" position="828,1360">Llegás al trabajo. Tu jefe te comenta que hoy vienen visitas a la fábrica y te pide que [[empieces a trabajar-&gt;start_working-es]].</tw-passagedata>
+<tw-passagedata pid="39" name="start_working-es" tags="factory" position="828,1510">Te sentás y preparás la máquina. Empezás a coser...
+(click-append: &quot;Empezás a coser...&quot;)[
 Te preguntás cómo le estará yendo a tu hermana con el novio, te pareció que casarse la semana que viene la estaba poniendo nerviosa.
 
 (live: 2s)[Hiciste una corbata...(stop:)]\
 ]\
-(click-append: "Hiciste una corbata...")[
+(click-append: &quot;Hiciste una corbata...&quot;)[
 Vos te pudiste haber casado hace rato. Ahora se te hace muy lejano.
 
 (live: 2s)[Hiciste dos corbatas...(stop:)]\
 ]\
-(click-append: "Hiciste dos corbatas...")[
+(click-append: &quot;Hiciste dos corbatas...&quot;)[
 Pero te dio culpa dejar sola a tu mamá.
 
 (live: 2s)[Hiciste tres corbatas...(stop:)]\
 ]\
-(click-append: "Hiciste tres corbatas...")[
+(click-append: &quot;Hiciste tres corbatas...&quot;)[
 Dejó tanto por vos.
 
 (live: 2s)[Hiciste cuatro corbatas...(stop:)]\
 ]\
-(click-append: "Hiciste cuatro corbatas...")[
+(click-append: &quot;Hiciste cuatro corbatas...&quot;)[
 Tu papá también.
 
 (live: 2s)[Hiciste cinco corbatas...(stop:)]\
 ]\
-(click-append: "Hiciste cinco corbatas...")[
+(click-append: &quot;Hiciste cinco corbatas...&quot;)[
 Quedarte con tu mamá era lo mínimo que podías hacer.
 
 (live: 2s)[Hiciste seis corbatas...(stop:)]\
 ]\
-(click-append: "Hiciste seis corbatas...")[
+(click-append: &quot;Hiciste seis corbatas...&quot;)[
 Además, no te gustaba ese muchacho.
 
 (live: 2s)[Hiciste siete corbatas...(stop:)]\
-(click-append: "Hiciste siete corbatas...")[
+(click-append: &quot;Hiciste siete corbatas...&quot;)[
 Ni ningún otro.
 (live: 4s)[
 [[Tu jefe te está llamando-&gt;boss_call-es]].]]\
-(stop:)]</tw-passagedata><tw-passagedata pid="40" name="boss_call-es" tags="factory" position="830,1641">Estás reunida con tus compañeros en el hall principal. Una mujer joven entra a la fábrica. La siguen dos hombres en traje. Su nombre es &lt;span class="expand"&gt;[[Eva-&gt;eva-es]]&lt;/span&gt;.
-(live: 14s)[(go-to: "eva_does_her_thing-es")(stop:)]</tw-passagedata><tw-passagedata pid="41" name="your_turn-es" tags="factory" position="830,1791">Una ola de verguenza te golpea el cuerpo. (click-append: "Una ola de verguenza te golpea el cuerpo.")[ Te das cuenta de que tu pelo es un desastre] (click-append: " es un desastre")[, que tu ropa está vieja y gastada] (click-append: "vieja y gastada")[, y que tus manos están curtidas por el trabajo.] 
+(stop:)]</tw-passagedata>
+<tw-passagedata pid="40" name="boss_call-es" tags="factory" position="830,1641">Estás reunida con tus compañeros en el hall principal. Una mujer joven entra a la fábrica. La siguen dos hombres en traje. Su nombre es &lt;span class=&quot;expand&quot;&gt;[[Eva-&gt;eva-es]]&lt;/span&gt;.
+(live: 14s)[(go-to: &quot;eva_does_her_thing-es&quot;)(stop:)]</tw-passagedata>
+<tw-passagedata pid="41" name="your_turn-es" tags="factory" position="830,1791">Una ola de verguenza te golpea el cuerpo. (click-append: &quot;Una ola de verguenza te golpea el cuerpo.&quot;)[ Te das cuenta de que tu pelo es un desastre] (click-append: &quot; es un desastre&quot;)[, que tu ropa está vieja y gastada] (click-append: &quot;vieja y gastada&quot;)[, y que tus manos están curtidas por el trabajo.] 
 
 (live: 12s)[Pero parece que a Eva solo le importás vos.(stop:)]
 
-(live: 14s)["¿Estás bien en tu trabajo?"(stop:)]
-(live: 16s)["¿Cómo están las cosas en casa?"(stop:)]
-(live: 18s)["¿Hay algo que necesites?"(stop:)]
+(live: 14s)[&quot;¿Estás bien en tu trabajo?&quot;(stop:)]
+(live: 16s)[&quot;¿Cómo están las cosas en casa?&quot;(stop:)]
+(live: 18s)[&quot;¿Hay algo que necesites?&quot;(stop:)]
 (live: 20s)[Te promete su ayuda.(stop:)]
 (live: 22s)[
-[[Le contás sobre tu vida.-&gt;life_telling-es]](stop:)]</tw-passagedata><tw-passagedata pid="42" name="life_telling-es" tags="factory" position="826,1935">Que tu papá murió. 
+[[Le contás sobre tu vida.-&gt;life_telling-es]](stop:)]</tw-passagedata>
+<tw-passagedata pid="42" name="life_telling-es" tags="factory" position="826,1935">Que tu papá murió. 
 (live:1.5s)[Que tu hermana se está por casar.(stop:)]
 (live: 3s)[Tus esperanzas de encontrar una casa para vivir con tu mamá.(stop:)] 
-(live: 7s)[Empezás a hablar sobre cómo rechazaste el trabajo de maestra. (click-append: "Empezás a hablar sobre cómo rechazaste el trabajo de maestra.")[ 
-Pero empezás a llorar...](click-append: "Pero empezás a llorar...")[
+(live: 7s)[Empezás a hablar sobre cómo rechazaste el trabajo de maestra. (click-append: &quot;Empezás a hablar sobre cómo rechazaste el trabajo de maestra.&quot;)[ 
+Pero empezás a llorar...](click-append: &quot;Pero empezás a llorar...&quot;)[
 Así que ella te abraza.](stop:)
 (live: 8.5s)[
 [[Sentís que las cosas van a estar bien-&gt;trip_to_speech-es]].
 (stop:)]
-]</tw-passagedata><tw-passagedata pid="43" name="final_mirror-es" tags="home" position="830,2072">(transition: "dissolve")[Te mirás al espejo antes de ir a dormir. 
+]</tw-passagedata>
+<tw-passagedata pid="43" name="final_mirror-es" tags="home" position="830,2072">(transition: &quot;dissolve&quot;)[Te mirás al espejo antes de ir a dormir. 
 (live: 2s)[Hay arrugas nuevas alrededor de tus ojos.(stop:)] (live: 4s)[Estás tan vieja.(stop:)]
 (live: 6s)[Te preguntás cómo se vería Eva ahora.(stop:)]
 (live: 8s)[Murió tan joven...(stop:)]
 (live: 10s)[
-[[Suena el telefóno.-&gt;phone_rings-es]](stop:)]]</tw-passagedata><tw-passagedata pid="44" name="knock-es" tags="home" position="705,2650">Hay gente discutiendo afuera. Es tarde, así que agarrás una escoba, te sentís más segura. 
-Te arrimás despacito hacia la puerta y espiás por el ojo de la cerradura. (click-append: "Te arrimás despacito hacia la puerta y espiás por el ojo de la cerradura.")[ &lt;span class="expand"&gt;[[Son los militares-&gt;military-es]].&lt;/span&gt; [[Tocan el timbre.-&gt;open_door-es]]]</tw-passagedata><tw-passagedata pid="45" name="open_door-es" tags="home" position="705,2780">Abrís la puerta con cautela, con la escoba aferrada a tu mano izquierda. 
+[[Suena el telefóno.-&gt;phone_rings-es]](stop:)]]</tw-passagedata>
+<tw-passagedata pid="44" name="knock-es" tags="home" position="705,2650">Hay gente discutiendo afuera. Es tarde, así que agarrás una escoba, te sentís más segura. 
+Te arrimás despacito hacia la puerta y espiás por el ojo de la cerradura. (click-append: &quot;Te arrimás despacito hacia la puerta y espiás por el ojo de la cerradura.&quot;)[ &lt;span class=&quot;expand&quot;&gt;[[Son los militares-&gt;military-es]].&lt;/span&gt; [[Tocan el timbre.-&gt;open_door-es]]]</tw-passagedata>
+<tw-passagedata pid="45" name="open_door-es" tags="home" position="705,2780">Abrís la puerta con cautela, con la escoba aferrada a tu mano izquierda. 
 
 Los canallas te miran y se ríen.  
-(live: 2s)["Hay ladrones corriendo por los techos," dicen.(stop:)]
-(live: 4s)["Necesitamos que nos deje entrar para agarrarlos."(stop:)]
-(live: 6s)[Accedés y los llevás arriba. (click-append: "Accedés y los llevás arriba.")[ 
-"Gracias, eso es todo."
-(live: 8s)[(go-to: "boom-es")(stop:)](stop:)](stop:)]</tw-passagedata><tw-passagedata pid="46" name="phone_rings-es" tags="home" position="705,2222">Es tu hermana.
+(live: 2s)[&quot;Hay ladrones corriendo por los techos,&quot; dicen.(stop:)]
+(live: 4s)[&quot;Necesitamos que nos deje entrar para agarrarlos.&quot;(stop:)]
+(live: 6s)[Accedés y los llevás arriba. (click-append: &quot;Accedés y los llevás arriba.&quot;)[ 
+&quot;Gracias, eso es todo.&quot;
+(live: 8s)[(go-to: &quot;boom-es&quot;)(stop:)](stop:)](stop:)]</tw-passagedata>
+<tw-passagedata pid="46" name="phone_rings-es" tags="home" position="705,2222">Es tu hermana.
 
 (live: 2s)[Te dice que los militares fueron a su casa.(stop:)]
 (live: 6s)[Están recorriendo el barrio.(stop:)]
 (live: 10s)[No deberían estar muy lejos de tu casa.(stop:)]
-(live: 14s)[Le das las gracias y [[cortás-&gt;hang_up-es]].(stop:)]</tw-passagedata><tw-passagedata pid="47" name="hang_up-es" tags="home" position="705,2372">Si los militares vienen a tu casa, tener el libro de Eva puede ser un problema. Sobre todo porque se llevaron a tu cuñado, que lleva meses desaparecido.
+(live: 14s)[Le das las gracias y [[cortás-&gt;hang_up-es]].(stop:)]</tw-passagedata>
+<tw-passagedata pid="47" name="hang_up-es" tags="home" position="705,2372">Si los militares vienen a tu casa, tener el libro de Eva puede ser un problema. Sobre todo porque se llevaron a tu cuñado, que lleva meses desaparecido.
 
-El libro está escondido abajo del piso de tu pieza. Debería estar seguro, pero los militares podrían encontrarlo si son muy rigurosos. [[Deberías hacer esto rápido-&gt;be_found-es]].</tw-passagedata><tw-passagedata pid="48" name="be_found-es" tags="home" position="830,2522">Eva te escuchó, te ayudó. Fue la persona más buena en tu vida. Su libro es lo único que te queda de ella. [[Deberías conservar el libro-&gt;knock-es]].
+El libro está escondido abajo del piso de tu pieza. Debería estar seguro, pero los militares podrían encontrarlo si son muy rigurosos. [[Deberías hacer esto rápido-&gt;be_found-es]].</tw-passagedata>
+<tw-passagedata pid="48" name="be_found-es" tags="home" position="830,2522">Eva te escuchó, te ayudó. Fue la persona más buena en tu vida. Su libro es lo único que te queda de ella. [[Deberías conservar el libro-&gt;knock-es]].
 
-Pero si terminás complicada por esto tu mamá va a sufrir y tu hermana también. ¿Eva querría que terminases en la cárcel o peor sólo por un memento? De seguro sabe, en donde sea que esté, que la querés y no vas a olvidarla. [[Deberías quemar el libro en la salamandra-&gt;burn-es]]. Es invierno, así que no sería sospechoso.</tw-passagedata><tw-passagedata pid="49" name="burn-es" tags="home" position="979,2534">Tenés el libro en tu mano. Tratás de que no te tiemble el pulso mientras abrís la tapa de la salamandra.
+Pero si terminás complicada por esto tu mamá va a sufrir y tu hermana también. ¿Eva querría que terminases en la cárcel o peor sólo por un memento? De seguro sabe, en donde sea que esté, que la querés y no vas a olvidarla. [[Deberías quemar el libro en la salamandra-&gt;burn-es]]. Es invierno, así que no sería sospechoso.</tw-passagedata>
+<tw-passagedata pid="49" name="burn-es" tags="home" position="979,2534">Tenés el libro en tu mano. Tratás de que no te tiemble el pulso mientras abrís la tapa de la salamandra.
 
-[[Metés el libro adentro y cerrás la tapa-&gt;close-es]].</tw-passagedata><tw-passagedata pid="50" name="close-es" tags="home" position="841,2649">Tu nariz se llena de olor a papel quemado. (text-style:"blur")[Ahora es demasiado tarde para salvar el libro.] [[Escuchás ruidos afuera-&gt;knock-es]].</tw-passagedata><tw-passagedata pid="51" name="trip_to_speech-es" tags="speech" position="667,1939">(transition: "dissolve")[Te mirás en el espejo mientras te preparás para ver el discurso de Eva. Sabés que anda mal de salud, pero esperás que el discurso sea una señal de que está mejorando.
+[[Metés el libro adentro y cerrás la tapa-&gt;close-es]].</tw-passagedata>
+<tw-passagedata pid="50" name="close-es" tags="home" position="841,2649">Tu nariz se llena de olor a papel quemado. (text-style:&quot;blur&quot;)[Ahora es demasiado tarde para salvar el libro.] [[Escuchás ruidos afuera-&gt;knock-es]].</tw-passagedata>
+<tw-passagedata pid="51" name="trip_to_speech-es" tags="speech" position="667,1939">(transition: &quot;dissolve&quot;)[Te mirás en el espejo mientras te preparás para ver el discurso de Eva. Sabés que anda mal de salud, pero esperás que el discurso sea una señal de que está mejorando.
 
 (live: 8s)[Estás muy linda hoy. Ayer te cortaste el pelo y tu mamá te ayudó a coser un traje nuevo. Está mucho mejor desde que Eva las ayudó a recuperar la casa.(stop:)]
 
 (live: 18s)[Al fin tienen una casa propia.(stop:)]
 
-(live: 22s)[Te alejás del espejo y [[mirás al libro de Eva-&gt;book_reading-es]]. Está en la mesita de luz.(stop:)]]</tw-passagedata><tw-passagedata pid="52" name="book_reading-es" tags="speech" position="542,1941">&lt;div id="book"&gt;Se llama *La razón de mi vida*. Su foto está en la tapa, está sonriendo. 
+(live: 22s)[Te alejás del espejo y [[mirás al libro de Eva-&gt;book_reading-es]]. Está en la mesita de luz.(stop:)]]</tw-passagedata>
+<tw-passagedata pid="52" name="book_reading-es" tags="speech" position="542,1941">&lt;div id=&quot;book&quot;&gt;Se llama *La razón de mi vida*. Su foto está en la tapa, está sonriendo. 
 
 (live: 4s)[Cuando abrís el libro, podés leer la dedicatoria:
-&lt;span class="writing"&gt;Para mi China querida.
+&lt;span class=&quot;writing&quot;&gt;Para mi China querida.
 Evita&lt;/span&gt;(stop:)]
 
-(live: 10s)[Siempre lo leés un poco antes de irte a dormir. Le prestás mucha antención a la dedicatoria. (click-append: "dedicatoria.")[Te dijo querida.](stop:)]
+(live: 10s)[Siempre lo leés un poco antes de irte a dormir. Le prestás mucha antención a la dedicatoria. (click-append: &quot;dedicatoria.&quot;)[Te dijo querida.](stop:)]
 
 (live: 16s)[Te preocupa que lo haya escrito a las apuradas, siempre está muy ocupada. Seguro se enfermó de tanto trabajar.(stop:)]
 
-(live: 20s)[Pero no importa. [[Hoy la vas a ver.-&gt;speech-es]] (stop:)]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="53" name="speech-es" tags="speech" position="544,2071">La plaza está colmada de gente mirando el balcón. Tu hermana y su marido están con vos. Tu hermana te da la mano.
+(live: 20s)[Pero no importa. [[Hoy la vas a ver.-&gt;speech-es]] (stop:)]&lt;/div&gt;</tw-passagedata>
+<tw-passagedata pid="53" name="speech-es" tags="speech" position="544,2071">La plaza está colmada de gente mirando el balcón. Tu hermana y su marido están con vos. Tu hermana te da la mano.
 
 (live: 6s)[Cuando ves a Eva en el balcón, le apretás la mano a tu hermana. Te asusta tanto verla así. Sonreía como el sol, hacía cosas sin pausa, y ahora...(stop:)]
 
@@ -443,34 +493,41 @@ Evita&lt;/span&gt;(stop:)]
 
 (live: 20s)[Sabés que te quiere.(stop:)]\
 
-(live: 22s)[(text-style:"blur")[Que los quiere a todos.(stop:)]]\
+(live: 22s)[(text-style:&quot;blur&quot;)[Que los quiere a todos.(stop:)]]\
 
-(live: 24s)[(text-style:"blur")[[[Abrazás a tu hermana.-&gt;final_mirror-es]](stop:)]]</tw-passagedata><tw-passagedata pid="54" name="gone-es" tags="home" position="949,2781">Se fueron.
+(live: 24s)[(text-style:&quot;blur&quot;)[[[Abrazás a tu hermana.-&gt;final_mirror-es]](stop:)]]</tw-passagedata>
+<tw-passagedata pid="54" name="gone-es" tags="home" position="949,2781">Se fueron.
 
-(live: 8s)[(reload:)(stop:)]</tw-passagedata><tw-passagedata pid="55" name="boom-es" tags="home" position="824,2782">(live: 2s)[Podés escuchar los pasos en el techo mientras bajás las escaleras. Coinciden con tus latidos.(stop:)]
+(live: 8s)[(reload:)(stop:)]</tw-passagedata>
+<tw-passagedata pid="55" name="boom-es" tags="home" position="824,2782">(live: 2s)[Podés escuchar los pasos en el techo mientras bajás las escaleras. Coinciden con tus latidos.(stop:)]
 
-(live: 4s)[(transition: "shudder")[(text-colour: "#955452")[
+(live: 4s)[(transition: &quot;shudder&quot;)[(text-colour: &quot;#955452&quot;)[
 &lt;h3&gt;BOOM!&lt;/h3&gt;
 ]\
 ]\
 (stop:)]\
-(live: 5s)[(transition: "shudder")[(text-colour: "#955452")[
+(live: 5s)[(transition: &quot;shudder&quot;)[(text-colour: &quot;#955452&quot;)[
 &lt;h3&gt;BOOM!&lt;/h3&gt;
 ]\
 ]\
 (stop:)]\
-(live: 6s)[(transition: "shudder")[(text-colour: "#955452")[
+(live: 6s)[(transition: &quot;shudder&quot;)[(text-colour: &quot;#955452&quot;)[
 &lt;h3&gt;BOOM!&lt;/h3&gt;
 ]\
 ]\
 (stop:)]\
 (live: 9s)[
-(go-to: "gone-es")(stop:)]</tw-passagedata><tw-passagedata pid="56" name="eva-es" tags="factory" position="705,1791">La primera dama. Solía ser una actriz. Está usando una pollera recta con una camisa blanca y un saco corto. Su pelo es rubio claro, ondulado y le llega a los hombros.
-(live: 14s)[(go-to: "eva_does_her_thing-es")(stop:)]</tw-passagedata><tw-passagedata pid="57" name="eva_does_her_thing-es" tags="factory" position="964,1644">Ella sonríe como el sol y saluda a cada uno de ustedes con un beso en la mejilla. Cuando te besa a vos, te sentís sonrojar. Luego tu jefe le muestra el lugar, ella lo observa y pondera lo que la rodea.
+(go-to: &quot;gone-es&quot;)(stop:)]</tw-passagedata>
+<tw-passagedata pid="56" name="eva-es" tags="factory" position="705,1791">La primera dama. Solía ser una actriz. Está usando una pollera recta con una camisa blanca y un saco corto. Su pelo es rubio claro, ondulado y le llega a los hombros.
+(live: 14s)[(go-to: &quot;eva_does_her_thing-es&quot;)(stop:)]</tw-passagedata>
+<tw-passagedata pid="57" name="eva_does_her_thing-es" tags="factory" position="964,1644">Ella sonríe como el sol y saluda a cada uno de ustedes con un beso en la mejilla. Cuando te besa a vos, te sentís sonrojar. Luego tu jefe le muestra el lugar, ella lo observa y pondera lo que la rodea.
 
-(live: 10s)[Después de un rato decide que ha visto suficiente y comienza a hablar con los trabajadores, uno por uno y en privado. [[Ahora te toca a vos-&gt;your_turn-es]].(stop:)]</tw-passagedata><tw-passagedata pid="58" name="military-es" tags="home" position="578,2768">Como es sabido, un grupo de matones, vestidos de civil, parados adelante de un Ford Falcon verde, es un grupo de militares. Unos sinverguenzas.
+(live: 10s)[Después de un rato decide que ha visto suficiente y comienza a hablar con los trabajadores, uno por uno y en privado. [[Ahora te toca a vos-&gt;your_turn-es]].(stop:)]</tw-passagedata>
+<tw-passagedata pid="58" name="military-es" tags="home" position="578,2768">Como es sabido, un grupo de matones, vestidos de civil, parados adelante de un Ford Falcon verde, es un grupo de militares. Unos sinverguenzas.
 
-[[Vuelven a tocar el timbre-&gt;open_door-es]].</tw-passagedata></tw-storydata>
+[[Vuelven a tocar el timbre-&gt;open_door-es]].</tw-passagedata>
+</tw-storydata>
+
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _toConsumableArray(arr){if(Array.isArray(arr)){for(var i=0,arr2=Array(arr.length);i<arr.length;i++)arr2[i]=arr[i];return arr2}return Array.from(arr)}var _slicedToArray=function(){function sliceIterator(arr,i){var _arr=[],_n=!0,_d=!1,_e=void 0;try{for(var _s,_i=arr[Symbol.iterator]();!(_n=(_s=_i.next()).done)&&(_arr.push(_s.value),!i||_arr.length!==i);_n=!0);}catch(err){_d=!0,_e=err}finally{try{!_n&&_i["return"]&&_i["return"]()}finally{if(_d)throw _e}}return _arr}return function(arr,i){if(Array.isArray(arr))return arr;if(Symbol.iterator in Object(arr))return sliceIterator(arr,i);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(obj){return typeof obj}:function(obj){return obj&&"function"==typeof Symbol&&obj.constructor===Symbol?"symbol":typeof obj};!function(){/**
  * @license almond 0.3.1 Copyright (c) 2011-2014, The Dojo Foundation All Rights Reserved.
