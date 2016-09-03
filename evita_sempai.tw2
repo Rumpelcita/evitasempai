@@ -13,7 +13,9 @@ Twee2::build_config.story_ifid = '253f28c1-7d11-48fb-bf69-b0418b2647f4'
 (if: (passage:)'s tags's length > 0)[
 (print: "<script>$('html').addClass('" + (passage:)'s tags.join(' ') + "'\)</script>")
 ]
-}
+}\
+<small>{(if: (saved-games:) contains "Slot A")[(link: "· Load ")[(load-game:"Slot A")]]} {(link:"· Save")[(if:(save-game:"Slot A"))[· Saved](else: )[Error]]}</small>
+<hr>
 
 ::StoryIncludes
 storycss.tw2

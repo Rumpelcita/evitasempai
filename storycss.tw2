@@ -61,7 +61,7 @@ tw-story{
 }
 
 tw-sidebar{
-	display: none
+ 	display: none
 }
 
 tw-link{
